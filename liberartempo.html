@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>TI.Fire Sistemas e Consultoria</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="./assets/img/fogo1.png" rel="icon">
+  <link href="./assets/img/fogo1.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://wa.me/554430237230?text=Ol&#225;,%20poderia%20me%20ajudar?" style="position:fixed;width:60px;height:60px;bottom:40px;left:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+	  z-index:1000;" target="_blank">
+      <i style="margin-top:16px" class="fa fa-whatsapp"></i>
+    </a>
+    <div class="container d-flex align-items-center">
+
+      <!-- <h1 class="logo me-auto"><a href="index.html">Ti.Fire</a></h1> -->
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <a href="index.html" class="logo me-auto"><img src="./assets/img/fogo2.png" alt="" class="img-fluid"></a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">Sobre</a></li>
+          <li><a class="nav-link scrollto" href="#why-us">Consultoria</a></li>
+          <!-- <li><a class="nav-link   scrollto" href="#portfolio">Portfolio</a></li> -->
+          <li><a class="nav-link   scrollto" href="#pricing">Planos</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#team">Team</a></li> -->
+          <li><a class="nav-link scrollto" href="#faq">D&#250;vidas</a></li>
+          <li><a class="nav-link scrollto" href="https://renave.tifire.com/">Renave</a></li>
+          <li class="dropdown"><a href="#"><span>T&#233;cnico</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li class="dropdown"><a><span>Conex&#227;o Remota</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="https://anydesk.com/pt/downloads/thank-you?dv=win_exe">AnyDesk</a></li>
+                  <li><a href="http://tifire.sytes.net/download/AnyDesk.exe">AnyDesk V.6</a></li>
+                  <li><a href="http://tifire.sytes.net/download/suporte.exe">Suporte</a></li>
+                </ul>
+              <li class="dropdown"><a><span>Download</span> <i class="bi bi-chevron-right"></i></a>
+
+                <ul>
+                  <li><a href="http://tifire.sytes.net/download">Instaladores</a></li>
+                  <li><a href="http://acraiz.icpbrasil.gov.br/ICP-Brasilv5.crt">Certificado da Receita Estadual</a></li>
+              </li>
+            </ul>
+          <li><a href="liberartempo.html">Liberar Tempo</a></li>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      <!-- .navbar -->
+      <li>
+        <a class="getstarted scrollto" href="https://api.whatsapp.com/send?phone=554430237230&text=Ol%C3%A1%2C%20estou%20precisando%20de%20Suporte%2C%20poderia%20me%20ajudar%3F">
+          SAC
+        </a>
+      </li>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <script>
+      function liberarTempo() {
+        let valorDigitado = document.getElementById('subject').value;
+        let numeros = valorDigitado.split('');
+        let soma = 0;
+        if (numeros.length === 4) {
+          for (let index = 0; index <= 2; index++) {
+            soma = soma + parseInt(numeros[index])
+          }
+          document.getElementById('contra-senha').innerText = soma * numeros[numeros.length - 1];
+        } else {
+          alert('A senha de libera&#231;&#227;o deve conter apenas 4 dig&#237;tos')
+        }
+      }
+    </script>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+          <h1>Liberar Tempo:
+            <span id="contra-senha" class="contra-senha" />
+          </h1>
+          <input type="text" placeholder="Digite a Senha de Libera&#231;&#227;o" inputmode="numeric" class="input-senha" name="subject" id="subject" required />
+          <div class="d-flex justify-content-center justify-content-lg-start" onclick="liberarTempo()">
+            <a href="#about" class="btn-get-started scrollto"> Enviar</a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+          <img src="assets/img/a.png" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+
+      <div class="footer-newsletter">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
+              <h4>Nos envie seu E-mail</h4>
+              <p>Envie o seu email que entraremos em contato para tirarmos suas d&#250;vidas. </p>
+              <form action="" method="post">
+                <input type="email" name="email"><input type="submit" value="Enviar">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h3>TI.Fire</h3>
+              <p>
+                R. Pioneira Maria Josefa de Ara&#250;jo, 206 <br>
+                Maring&#225; - PR, 87010-145<br>
+                <strong>Telefone:</strong> +55 44 3023-7230<br>
+                +55 44 3026-8465<br>
+                +55 44 3027-9801<br>
+                <strong>E-mail:</strong> contato@tifire.com<br>
+              </p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Alguns Links</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#about">Sobre</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#pricing">Planos</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Suporte</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Politica de Privacidade</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Nossos Servi&#231;os</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="https://api.whatsapp.com/send?phone=554430237230&text=Ol%C3%A1%2C%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20que%20voc%C3%AAs%20oferecem!">Sistemas
+                    de Gest&#227;o Comercial</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="https://api.whatsapp.com/send?phone=554430237230&text=Ol%C3%A1%2C%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20que%20voc%C3%AAs%20oferecem!">Consultoria
+                    Empresarial</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="https://api.whatsapp.com/send?phone=554430237230&text=Ol%C3%A1%2C%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20que%20voc%C3%AAs%20oferecem!">Vitrine</a>
+                </li>
+                <li><i class="bx bx-chevron-right"></i> <a href="https://api.whatsapp.com/send?phone=554430237230&text=Ol%C3%A1%2C%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20que%20voc%C3%AAs%20oferecem!">Aplicativos</a>
+                </li>
+                <li><i class="bx bx-chevron-right"></i> <a href="https://api.whatsapp.com/send?phone=554430237230&text=Ol%C3%A1%2C%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20que%20voc%C3%AAs%20oferecem!">E-Comerce</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Redes Sociais</h4>
+              <p>Entre em contato conosco pela nossas redes:</p>
+              <div class="social-links mt-3">
+                <a href="https://api.whatsapp.com/send?phone=554430237230&text=Ol%C3%A1%2C%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20que%20voc%C3%AAs%20oferecem!" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
+                <a href="https://www.instagram.com/tifiresistemas/" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="https://www.facebook.com/tifiresistemas" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <!-- <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> -->
+                <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="container footer-bottom clearfix">
+        <div class="copyright">
+          &copy; Copyright <strong><span>TI.Fire Sistemas</span></strong>. All Rights Reserved
+        </div>
+
+
+        <div id="preloader"></div>
+        <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+        <!-- Vendor JS Files -->
+        <script src="assets/vendor/aos/aos.js"></script>
+        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+        <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+        <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+        <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+        <script src="assets/vendor/php-email-form/validate.js"></script>
+
+        <!-- Template Main JS File -->
+        <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
